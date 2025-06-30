@@ -1,0 +1,67 @@
+#projects-cont {
+  background-color: #ebf5f5;
+  padding: 40px 40px;
+  margin: -7px -7px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+p {
+  font-weight: 300;
+  line-height: 2.2rem;
+  margin-top: 20px;
+  max-width: 960px;
+  font-size: 1.5rem;
+}
+
+#desc-button {
+  background: transparent;
+  border: 2px solid #111;
+  border-radius: 0;
+  color: #111;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: auto;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 15px 30px;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+  z-index: 0;
+}
+
+#desc-button::before {
+  background-color: #191e1e;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(-101%);
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+#desc-button:hover {
+  color: #fff;
+}
+
+#desc-button:hover::before {
+  transform: translateX(0);
+}
+
+.line {
+  background: linear-gradient(45deg, #6db33f 26%, #80ea6e 89%);
+  height: 6px;
+  margin: 0 -7px;
+}
