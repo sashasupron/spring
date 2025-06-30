@@ -1,11 +1,89 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-right: 40px;
+}
+
+#logo {
+  height: 250px;
+  width: auto;
+}
+
+.navbar-link  {
+  font-weight: 600;
+  color: #111;
+    margin-left: 2rem;
+    font-size: 15px;
+}
+
+
+.a-header {
+    font-weight: 600;
+    color: #111;
+      margin-left: 2rem;
+      font-size: 15px;
+  }
+
+.arrow-down {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(-45deg);
+  margin-left: 8px;
+  margin-bottom: 2px;
+}
+
+.navbar-item  {
+  color: #4a4a4a;
+  display: block;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  padding: 1rem;
+  box-shadow: 0 5px 30px rgba(108, 135, 135, 0.5);
+  z-index: 100;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.navbar-item-wrapper:hover .navbar-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.navbar-item-wrapper {
+  position: relative;
+  display: inline-block;
+  align-items: flex-start;
+}
+
 #projects-cont {
   background-color: #ebf5f5;
   padding: 40px 40px;
   margin: -7px -7px;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
 }
 
 h1 {
@@ -37,6 +115,7 @@ p {
   text-transform: uppercase;
   transition: color 0.2s ease-in-out;
   z-index: 0;
+  margin-bottom: 50px;
 }
 
 #desc-button::before {
@@ -65,3 +144,6 @@ p {
   height: 6px;
   margin: 0 -7px;
 }
+
+  
+  
