@@ -80,6 +80,23 @@ body {
   transform: translateY(0);
 }
 
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.burger-menu span {
+  height: 3px;
+  background-color: #111;
+  border-radius: 2px;
+}
+
 #projects-cont {
   background-color: #ebf5f5;
   padding: 40px 40px;
@@ -96,7 +113,7 @@ p {
   line-height: 2.2rem;
   margin-top: 20px;
   max-width: 960px;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 #desc-button {
@@ -201,4 +218,54 @@ p {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+@media (max-width: 1000px) {
+  .main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    height: 60px;
+    padding: 5px 5px;
+  }
+
+  #logo {
+    height: 180px;
+  }
+
+  p {
+    font-size: 21px;
+  }
+
+  #projects-cont {
+    padding: 30px 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .burger-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1145px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+  }
 }
