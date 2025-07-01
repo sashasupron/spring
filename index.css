@@ -16,20 +16,20 @@ body {
   width: auto;
 }
 
-.navbar-link  {
+.navbar-link {
   font-weight: 600;
   color: #111;
-    margin-left: 2rem;
-    font-size: 15px;
+  margin-left: 2rem;
+  font-size: 15px;
+  line-height: 50px;
 }
 
-
 .a-header {
-    font-weight: 600;
-    color: #111;
-      margin-left: 2rem;
-      font-size: 15px;
-  }
+  font-weight: 600;
+  color: #111;
+  margin-left: 2rem;
+  font-size: 15px;
+}
 
 .arrow-down {
   display: inline-block;
@@ -42,7 +42,7 @@ body {
   margin-bottom: 2px;
 }
 
-.navbar-item  {
+.navbar-item {
   color: #4a4a4a;
   display: block;
   line-height: 1.5;
@@ -54,7 +54,6 @@ body {
 .navbar-dropdown {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
   top: 100%;
@@ -66,18 +65,20 @@ body {
   z-index: 100;
   list-style: none;
   border-radius: 5px;
+  margin-top: 0;
 }
+
+
+.navbar-item-wrapper {
+    position: relative;
+    display: inline-block;
+    align-items: flex-start;
+  }
 
 .navbar-item-wrapper:hover .navbar-dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-}
-
-.navbar-item-wrapper {
-  position: relative;
-  display: inline-block;
-  align-items: flex-start;
 }
 
 #projects-cont {
@@ -144,6 +145,3 @@ p {
   height: 6px;
   margin: 0 -7px;
 }
-
-  
-  
