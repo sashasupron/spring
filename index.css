@@ -145,3 +145,31 @@ p {
   height: 6px;
   margin: 0 -7px;
 }
+
+
+
+.names {
+    font-weight: 100;
+}
+
+
+.description {
+    font-weight: 100;
+    color: gray;
+    font-size: 17px;
+}
+
+
+.version {
+  background-color: rgb(111, 224, 74);
+  border-radius: 5px;
+  padding: 5px;
+  color: #111;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.versions {
+  font-size: 12px;
+  color: gray;
+}
