@@ -233,6 +233,26 @@ p {
   gap: 15px;
 }
 
+#searchInput {
+  display: block;
+  margin: 30px auto;
+  height: 60px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 20%;
+  padding-left: 15px;
+}
+
+#searchButton {
+  height: 60px;
+  margin: 30px 15px;
+  width: 7%;
+  background-color: #6db33f;
+  color: white;
+  font-weight: 500;
+}
+
 @media (max-width: 1000px) {
   .main-content {
     grid-template-columns: repeat(2, 1fr);
@@ -290,6 +310,7 @@ p {
     display: none;
     padding: 50px 20px;
     z-index: 100;
+    overflow-y: auto;
   }
 
   .navbar-item-wrapper {
